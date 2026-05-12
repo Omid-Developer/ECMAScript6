@@ -1,9 +1,11 @@
-let user = {};              // 1. ساخت object خالی
+let user={}
+user.name = "John";
+user.surname = "Smith";
+user.name = "Pete";
+delete user.name;
+console.log(user); // {surname: "Smith"}
 
-user.name = "John";         // 2. اضافه کردن name
-
-user.surname = "Smith";     // 3. اضافه کردن surname
-
-user.name = "Pete";         // 4. تغییر مقدار name
-
-delete user.name;           // 5. حذف property name
+const user = {
+  name: "John"
+}
+// does it work?
